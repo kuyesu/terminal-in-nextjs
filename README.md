@@ -4,7 +4,7 @@ Feel free to play with the web demo above!
 
 <p align="center">
 <img src="./public/screen.png" ><br>
-<strong>LiveTerm with different themes</strong>
+<strong>Designed with ❤️ Love from Rogers. Inspired by LiveTeam 🤩</strong>
 </p>
 
 
