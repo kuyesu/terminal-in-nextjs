@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Hack';
+  src: url(/assets/fonts/Hack-NF.ttf);
+  display: swap;
+}
+
+* {
+  font-family: 'Hack', monospace;
+}
+
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  height: 100%;
+  overflow: auto;
+}
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+html,
+body {
+  height: 100vh;
+  color: white
+}
+
+.container-data {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.content {
+  display: flex;
+  gap: 5em;
+  width: 100%;
+  padding-top: 3em;
+  position: absolute;
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  transform: scaleX(1);
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e252e;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ebdbb2;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8037;
+}
+
+
+/* browser dots */
+.dot-container {
+    border-radius: 5px 5px 0 0;
+    grid-area: nav-wrapper;
+    border-bottom: 1px solid #164d56;
+    display: flex;
+    height: 6rem;
+
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15202b;
+}
+.dots-wrapper {
+  display: flex;
+    padding: 10px;
+}
+.browser-dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, .75);
+}
+#dot-3 {
+  background-color: #2aca3e;
+}
+
+element {
+
+  opacity: 1;
+
+}
+
+#dot-2 {
+
+  background-color: #fec02f;
+
+}
+#dot-1 {
+  background-color: #fc6058;
+}
+#navigation {
+  margin: 0;
+  top: -5px;
+  position: relative;
+  padding: 10px;
+  display: flex;
+}
+
+#navigation li {
+  display: inline-block;
+}
